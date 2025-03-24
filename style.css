@@ -6,7 +6,7 @@
 
 .main-container {
   height: 75vh;
-  background-image: linear-gradient(to right, rgb(86, 250, 154), rgb(4, 56, 53));
+  background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
   margin-top: 0px; /* Removes negative margin */
 }
 
@@ -29,6 +29,15 @@
   background-color: rgb(63, 62, 62);
   color: white;
   padding: 0 10px; /* Compact left-right padding */
+}
+
+.first-section {
+  color: rgb(198 66 110)
+}
+
+.fourth-section {
+  color: rgb(198 66 110)
+
 }
 
 
@@ -58,9 +67,37 @@ p {
 
 
 .white-box {
-  position: relative;
-  width: 30rem;
-  height: 64px;
-  background-color: black;
+  position: absolute;
+  width: 40rem;
+  height: 71px;
+  background-color: white;
   top: 25rem;
+
+  transform: translateX(50%);
+  color: white;
+
+  display: flex;
+
+}
+
+
+.second-screen {
+  background-color: rgb(2, 30, 41);
+  height: 70vh;
+}
+
+.services-button {
+  margin-top: 20px;
+  height: 34px;
+  width: 99px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(86, 250, 154);
+  color: white;
+  font-size: 15px;
+
+  position: absolute;
+  left: 46%;
+
+
 }
