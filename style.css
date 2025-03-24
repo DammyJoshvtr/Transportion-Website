@@ -84,6 +84,8 @@ p {
 .second-screen {
   background-color: rgb(2, 30, 41);
   height: 70vh;
+  position: relative;
+  color: white;
 }
 
 .services-button {
