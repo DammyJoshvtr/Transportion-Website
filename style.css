@@ -47,7 +47,7 @@
 }
 
 
-h1 {
+.first-screen-header {
   position: absolute;
   top: 10rem;
   margin-left: 2rem;
@@ -55,7 +55,7 @@ h1 {
   font-size: 30px;
 }
 
-p {
+.first-screen-paragraph {
   position: absolute;
   top: 15rem;
 
@@ -71,7 +71,8 @@ p {
   width: 40rem;
   height: 71px;
   background-color: white;
-  top: 25rem;
+  /* top: 25rem; */
+  bottom: 0;
 
   transform: translateX(50%);
   color: white;
@@ -86,20 +87,103 @@ p {
   height: 70vh;
   position: relative;
   color: white;
+  padding-right: 20px;
+
 }
 
 .services-button {
-  margin-top: 20px;
+  margin-top: 10px;
   height: 34px;
-  width: 99px;
-  border-radius: 12px;
+  width: 135px;
+  border-radius: 20px;
   border: none;
-  background-color: rgb(86, 250, 154);
+  background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
   color: white;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: bold;
 
   position: absolute;
   left: 46%;
+}
 
+.second-screen-header {
+  margin-top: 0px;
+  transform: translate(70%, 4rem);
+  font-size: 30px;
+}
 
+.second-screen-text {
+  font-size: 15px;
+  transform: translate(70%, 68px);
+  margin-bottom: 40px;
+
+}
+
+.large-numbers{
+  display: inline;
+  font-size: 50px;
+  background-color: red;
+
+}
+
+.third-screen {
+    background-color: white;
+    height: 100vh;
+    position: relative;
+    color: white;
+  
+}
+
+.third-screen-button {
+  padding: (150px);
+  margin-top: 10px;
+  height: 34px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+  position: absolute;
+  left: 46%;
+}
+
+.third-screen-header {
+  color: rgb(7, 129, 138);
+  font-size: 50px;
+  font-weight: bold;
+  transform: translateY(99px);
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.third-screen-text {
+  color: black;
+  transform: translate(60%, -155px);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.first-box, .second-box, .third-box {
+  background-color: brown;
+  border-radius: 15px;
+  height: 12rem;
+  width: 12rem;
+}
+
+.fourth-screen {
+  height: 75vh;
+  background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
 }
