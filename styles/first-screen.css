@@ -1,0 +1,63 @@
+/* FIRST SCREEN STYLES */
+
+.first-screen-container {
+  min-height: 85vh;
+  background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* HEADER */
+.nav-bar {
+  display: flex;
+  justify-content: space-between; /* Space between navbar items */
+  align-items: center; /* Vertically aligns items */
+
+  position: fixed;
+  top: 10px; /* Fixed navbar with slight offset */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the navbar horizontally */
+  z-index: 10; /* Ensures it stays on top */
+
+  height: 55px;
+  width: 40rem; /* Navbar width */
+  border-radius: 5px;
+
+  background-color: rgb(22, 21, 21);
+  color: white;
+  padding: 0 10px; /* Compact left-right padding */
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.9);
+
+}
+
+.first-section,
+.fourth-section {
+  color: rgb(198 66 110)
+}
+
+
+.home-text-container {
+  height: 32rem;
+
+  display: flex;
+  justify-content: center; /* Aligns horizontally to the left */
+  flex-direction: column; /* Stack content vertically */
+  color: white;
+}
+
+
+.first-screen-header {
+  top: 10rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+
+.first-screen-paragraph {
+  top: 15rem;
+
+  margin-left: 2rem;
+  margin-top: 0px;
+
+  font-size: 20px;
+}

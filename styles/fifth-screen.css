@@ -1,0 +1,91 @@
+.fifth-screen {
+  min-height: 100vh;
+}
+
+.fifth-button-container {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fifth-button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  height: 34px;
+  width: 280px;
+  border-radius: 20px;
+  border: none;
+  background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+.fifth-box-container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 115px;
+  margin-right: 115px;
+  margin-top: 30px;
+}
+
+.fifth-box {
+  background-color: purple;
+  width: 12rem;
+  height: 12rem;
+  box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.9);
+
+}
+
+.fifth-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 63px;
+  margin-right: 63px;
+}
+
+.bottom-text-header {
+  font-size: 20px;
+  text-align: center; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fifth-text {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fifth-bottom-button-container {
+  height: 60px;
+  display: flex;
+  justify-content:right;
+  align-items: center;
+  
+  margin-top: 1rem;
+
+}
+
+.fifth-bottom-button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 7rem;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}

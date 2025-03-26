@@ -1,0 +1,32 @@
+.second-screen {
+  background-color: rgb(2, 30, 41);
+  min-height: 70vh;
+  color: white;
+  padding-top: 1rem;
+  padding-right: 3rem;
+}
+
+.second-button-container {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.second-button {
+  height: 34px;
+  width: 135px;
+  border-radius: 20px;
+  border: none;
+  background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.second-text-container {
+  display: flex;
+  justify-content: end;
+}

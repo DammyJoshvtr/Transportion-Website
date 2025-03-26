@@ -1,0 +1,29 @@
+.sixth-screen {
+  min-height: 50vh;
+  background-color: rgb(2, 30, 41);
+  color: white;
+}
+
+.text-section-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+.sixth-header {
+  font-size: 18px
+}
+
+ul {
+  padding: 0px;
+}
+
+.sixth-bottom-text-container {
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 5rem;
+}
