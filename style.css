@@ -4,12 +4,11 @@
   margin-top: 0;
 } */
 
-.main-container {
-  height: 90vh;
+.first-screen-container {
+  min-height: 85vh;
   background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-top: 0px; /* Removes negative margin */
 }
 
 /* HEADER */
@@ -33,68 +32,55 @@
   padding: 0 10px; /* Compact left-right padding */
 }
 
-.first-section {
-  color: rgb(198 66 110)
-}
-
+.first-section,
 .fourth-section {
   color: rgb(198 66 110)
-
 }
 
 
-.home-text {
-  position: relative;
+.home-text-container {
+  height: 32rem;
+
+  display: flex;
+  justify-content: center; /* Aligns horizontally to the left */
+  flex-direction: column; /* Stack content vertically */
   color: white;
 }
 
 
 .first-screen-header {
-  position: absolute;
   top: 10rem;
   margin-left: 2rem;
-  margin-bottom: 0px;
+  margin-bottom: 2rem;
   font-size: 30px;
 }
 
 .first-screen-paragraph {
-  position: absolute;
   top: 15rem;
 
   margin-left: 2rem;
   margin-top: 0px;
 
-  font-size: 19px;
+  font-size: 20px;
 }
-
-
-.white-box {
-  position: absolute;
-  width: 40rem;
-  height: 71px;
-  background-color: white;
-  /* top: 25rem; */
-  bottom: 0;
-
-  transform: translateX(50%);
-  color: white;
-
-  display: flex;
-
-}
-
 
 .second-screen {
   background-color: rgb(2, 30, 41);
-  height: 70vh;
-  position: relative;
+  min-height: 70vh;
   color: white;
-  padding-right: 20px;
+  padding-top: 1rem;
+  padding-right: 3rem;
+}
+
+.second-button-container {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
-.services-button {
-  margin-top: 10px;
+.second-button {
   height: 34px;
   width: 135px;
   border-radius: 20px;
@@ -103,43 +89,27 @@
   color: white;
   font-size: 20px;
   font-weight: bold;
-
-  position: absolute;
-  left: 46%;
 }
 
-.second-screen-header {
-  margin-top: 0px;
-  transform: translate(70%, 4rem);
-  font-size: 30px;
-}
-
-.second-screen-text {
-  font-size: 15px;
-  transform: translate(70%, 68px);
-  margin-bottom: 40px;
-
-}
-
-.large-numbers{
-  display: inline;
-  font-size: 50px;
-  background-color: red;
-
+.second-text-container {
+  display: flex;
+  justify-content: end;
 }
 
 .third-screen {
-    background-color: rgb(236, 230, 230);
-    height: 100vh;
-    position: relative;
-    color: white;
-    padding-left: 20px;
-  
+  background-color: rgb(236, 230, 230);
+  min-height: 100vh;
+  color: white;
+  padding-top: 1rem;
+}
+
+.third-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .third-screen-button {
-  padding: (150px);
-  margin-top: 10px;
   height: 34px;
   width: 200px;
   border-radius: 20px;
@@ -148,27 +118,27 @@
   color: white;
   font-size: 20px;
   font-weight: bold;
+}
 
-  position: absolute;
-  left: 39%;
+.third-text-container {
+  display: grid;
+  grid-template-columns: 20rem 20rem;
+  column-gap: 30rem;
+
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .third-screen-header {
   color: rgb(7, 129, 138);
-  font-size: 30px;
+  font-size: 39px;
   font-weight: bold;
-  transform: translateY(50px);
   margin-bottom: 0px;
-  display: inline-block;
 }
 
 .third-screen-text {
-  display: inline-block;
-  position: absolute;
-  right: 30px;
-  top: 50px;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 0px;
   
@@ -177,33 +147,30 @@
 .box-container {
   display: flex;
   justify-content: space-between;
-  width: 50rem;
-  position: relative;
-  margin-top: 0px;
-  bottom: -100px;
-  left: 180px;
+  align-items: center;
+
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 2rem;
 }
 
-.first-box, .second-box, .third-box {
+.box {
   background-color: brown;
   border-radius: 15px;
-  height: 180px;
+  height: 165px;
   width: 165px;
 }
 
 
 .box-text-container {
   display: flex;
-    justify-content: space-between;
-    width: 62rem;
-    position: relative;
-    top: 8rem;
-    left: 96px;
+  justify-content: space-between;
+
+  margin-left: 6rem;
+  margin-top: 2rem;
 }
 
-.first-text,
-.second-text,
-.third-text {
+.text-box {
   border-radius: 15px;
   height: 90px;
   width: 20rem;
@@ -230,7 +197,7 @@
 }
 
 .fourth-screen {
-  height: 70vh;
+  min-height: 70vh;
   background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
 }
 
@@ -261,7 +228,6 @@
 
   display: flex;
   justify-content: center;
-  align-items: left;
   flex-direction: column;
 
   padding-left: 10px;
@@ -292,7 +258,7 @@
 }
 
 .fifth-screen {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .fifth-button-container {
@@ -380,7 +346,7 @@
 }
 
 .sixth-screen {
-  height: 70vh;
+  min-height: 50vh;
   background-color: rgb(2, 30, 41);
   color: white;
 }
