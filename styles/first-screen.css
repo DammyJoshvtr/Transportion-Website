@@ -27,14 +27,17 @@
   color: white;
   padding: 0 10px; /* Compact left-right padding */
   box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.9);
+  transition: color 1s;
+  cursor: pointer;
 
 }
 
-.first-section,
-.fourth-section {
-  color: rgb(198 66 110)
+  .first-section:hover,
+  .second-section:hover,
+.third-section:hover,
+.fourth-section:hover {
+  color: rgb(198, 66, 110);
 }
-
 
 .home-text-container {
   height: 32rem;

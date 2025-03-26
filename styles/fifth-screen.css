@@ -1,5 +1,5 @@
 .fifth-screen {
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 .fifth-button-container {
@@ -88,4 +88,10 @@
   color: white;
   font-size: 20px;
   font-weight: bold;
+  transition: filter 0.8s ease;
+  cursor: pointer;
+}
+
+.fifth-bottom-button:hover {
+  filter: brightness(1.2);
 }
