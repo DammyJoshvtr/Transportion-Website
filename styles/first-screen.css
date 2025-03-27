@@ -41,12 +41,15 @@
 
 /* When not on the home screen */
 .is-not-hovered {
-  opacity: 0.5; /* Transparent navbar */
+  opacity: 0.7; /* Transparent navbar */
+  box-shadow: none;
 }
 
 /* Restore visibility on hover */
 .nav-bar:hover {
   opacity: 1; /* Fully visible when hovered */
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.9);
+
 }
 
 
