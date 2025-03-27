@@ -27,9 +27,9 @@
   color: white;
   padding: 0 10px; /* Compact left-right padding */
   box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.9);
-  transition: color 1s;
+  transition: opacity 0.5s ease;
+  opacity: 1; /* Fully visible */
   cursor: pointer;
-
 }
 
   .first-section:hover,
@@ -38,6 +38,17 @@
 .fourth-section:hover {
   color: rgb(198, 66, 110);
 }
+
+/* When not on the home screen */
+.is-not-hovered {
+  opacity: 0.5; /* Transparent navbar */
+}
+
+/* Restore visibility on hover */
+.nav-bar:hover {
+  opacity: 1; /* Fully visible when hovered */
+}
+
 
 .home-text-container {
   height: 32rem;
