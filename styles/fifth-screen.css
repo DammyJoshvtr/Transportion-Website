@@ -29,8 +29,8 @@
   display: flex;
   justify-content: space-between;
 
-  margin-left: 115px;
-  margin-right: 115px;
+  margin-left: 138px;
+  margin-right: 138px;
   margin-top: 30px;
 }
 
@@ -39,6 +39,9 @@
   width: 12rem;
   height: 12rem;
   box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -94,4 +97,14 @@
 
 .fifth-bottom-button:hover {
   filter: brightness(1.2);
+}
+
+.schedule-image {
+  width: 80%;
+  object-fit: cover;
+  transition: width 0.3s;
+}
+
+.schedule-image:hover {
+  width: 90%;
 }
