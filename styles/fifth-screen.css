@@ -101,10 +101,18 @@
 
 .schedule-image {
   width: 80%;
-  object-fit: cover;
   transition: width 0.3s;
 }
 
 .schedule-image:hover {
+  width: 90%;
+}
+
+.ticket-image {
+  width: 80%;
+  transition: width 0.3s;
+}
+
+.ticket-image:hover {
   width: 90%;
 }
