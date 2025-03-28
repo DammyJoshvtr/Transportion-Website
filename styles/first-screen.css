@@ -92,7 +92,6 @@
   margin-left: 2rem;
 
   position: relative;
-
 }
 
 .arrow-left {
@@ -121,11 +120,13 @@
 }
 
 .left-arrow {
-  width: 100%;
+  width: 45px;
+  margin: 0px;
 }
 
 .right-arrow {
-  width: 100%;
+  width: 37px;
+  margin: 0px;
 }
 
 .text-container {
