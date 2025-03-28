@@ -5,6 +5,8 @@
   background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+
+  padding-top: 3rem;
 }
 
 /* HEADER */
@@ -54,7 +56,7 @@
 
 
 .home-text-container {
-  height: 32rem;
+  height: 20rem;
 
   display: flex;
   justify-content: center; /* Aligns horizontally to the left */
@@ -77,4 +79,59 @@
   margin-top: 0px;
 
   font-size: 20px;
+}
+
+.activity-box {
+  height: 7rem;
+  width: 18rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 2rem;
+
+  position: relative;
+
+}
+
+.arrow-left {
+  width: 36px;
+  height: 36px;
+  background-color: rgb(241, 234, 234);
+
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.arrow-right {
+  width: 36px;
+  height: 36px;
+  background-color: rgb(241, 234, 234);
+
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-arrow {
+  width: 100%;
+}
+
+.right-arrow {
+  width: 100%;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
