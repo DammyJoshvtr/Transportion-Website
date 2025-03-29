@@ -47,6 +47,7 @@
   font-weight: bold;
 }
 
+
 .fourth-bottom-text {
   height: 100px;
   display: flex;
@@ -59,4 +60,14 @@
   font-size: 15px;
   text-align: center;
   color: white;
+  
+}
+
+
+.fourth-bottom-text p {
+  cursor: pointer;
+}
+
+.fourth-bottom-text p:hover {
+  text-decoration: underline;
 }

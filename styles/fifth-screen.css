@@ -43,6 +43,8 @@
   align-items: center;
   justify-content: center;
 
+  cursor: pointer;
+
 }
 
 .fifth-bottom-container {
@@ -59,6 +61,8 @@
   text-align: center; 
   margin-top: 20px;
   margin-bottom: 20px;
+
+  cursor: pointer;
 }
 
 .fifth-text {
@@ -67,6 +71,12 @@
   margin-bottom: 0px;
   font-size: 14px;
   font-weight: bold;
+
+  cursor: pointer;
+}
+
+.fifth-text:hover {
+  text-decoration: underline;
 }
 
 .fifth-bottom-button-container {

@@ -3,82 +3,61 @@
 // const lmao = "Wha the Hell0";
 // console.log(lmao);
 
-
 // document.addEventListener('DOMContentLoaded', () => {
-//   //Mapping Links to their section
-//   const scrollLinks = {
-//     "homeLink": "home",
-//     "aboutUsLink" : "about",
-//     "ourServicesLink": "services",
-//     "contactUsLink": "contact"
-//   }
+//   const leftButtonElement = document.querySelector('.js-left-arrow');
+//   console.log(leftButtonElement);
+//   const rightButtonElement = document.querySelector('.js-right-arrow');
+//   console.log(rightButtonElement);
 
-//   Object.keys(scrollLinks).forEach((linkId) => {
-//     console.log(linkId);
-//     const linkElement = document
-//       .getElementById(linkId);
-//     console.log(linkElement);
-
-//     const targetSection = document
-//       .getElementById(scrollLinks[linkId]);
-    
-//     console.log(targetSection);
-
-//     if (linkElement && targetSection) {
-//       linkElement.addEventListener('click', () => {
-//         targetSection.scrollIntoView({
-//           behavior: "smooth"
-//         });
-//       });
-//     }
-//   });
-
-// });
-
-
-//The code Below Works
-
-// const buttonElement = document.getElementById('ourServicesLink');
-// console.log(buttonElement);
-
-// buttonElement.addEventListener('click', () => {
-//   const targetElement = document.getElementById('services');
-
-//   targetElement.scrollIntoView({
-//     behavior: "smooth"
-//   });
-// });
-
-
-
-//Navigation Codes
-// const navButtons = {
-//   "homeLink": "home",
-//   "aboutUsLink": "about",
-//   "ourServicesLink": "services",
-//   "contactUsLink": "contact"  
-// }
-
-// Object.keys(navButtons).forEach((key) => {
-
-//   const buttonElement = document.getElementById(key);
-
-//   const targetElement = document.getElementById(navButtons[key]);
-
-//   if (Object.keys(navButtons)[0] && buttonElement) {
-//     console.log(buttonElement);
-//     const navBarElement = document.getElementById('navbar');
-//     navBarElement.classList.add('is-not-hovered');
-//   }
-
-//   buttonElement.addEventListener('click', () => {
-//     targetElement.scrollIntoView({
-//       behavior: "smooth"
-//     })
-//   })
-
+//   const texts = ['Schedule a Ride', 'Book a Ride']
   
-// });
+//   rightButtonElement.addEventListener('click', () => {
+//     const scheduleTextElement = document.querySelector('.js-schedule-text');
+
+//     texts.forEach((text) => {
+//       scheduleTextElement.innerHTML=text;
+
+//     });
+//   });
+
+//   leftButtonElement.addEventListener();
+
+// })
+
+document.addEventListener('DOMContentLoaded', () => {
+  const leftButtonElement = document.querySelector('.js-left-arrow');
+  const rightButtonElement = document.querySelector('.js-right-arrow');
+  const scheduleTextElement = document.querySelector('.js-schedule-text');
+
+  const texts = ['Schedule a Ride', 'Book a Ride'];
+  let currentIndex = 0;
+
+  // Function to update the text
+  function updateText(index) {
+    scheduleTextElement.innerHTML = texts[index];
+    console.log(texts[index]);
+  }
+
+  // Right button logic (next text)
+  rightButtonElement.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % texts.length;
+    updateText(currentIndex);
+  });
+
+  // Left button logic (previous text)
+  leftButtonElement.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + texts.length) % texts.length;
+    updateText(currentIndex);
+  });
+
+  // Initialize the text on page load
+  updateText(currentIndex);
+});
+
+
+
+
+
 
 
 // Ensure DOM content is fully loaded before running the script
