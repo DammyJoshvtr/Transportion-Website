@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const rightButtonElement = document.querySelector('.js-right-arrow');
   const scheduleTextElement = document.querySelector('.js-schedule-text');
 
-  const texts = ['Schedule a Ride', 'Book a Ride'];
+  const texts = ['Schedule a Ride', 'Hire a Bus'];
   let currentIndex = 0;
 
   // Function to update the text

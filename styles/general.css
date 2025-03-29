@@ -6,4 +6,10 @@
 
 body {
   user-select: none;
+  font-family: inter, EuclidCircularB-Bold, sans-serif;
+}
+
+a{
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the text color from the parent */
 }
