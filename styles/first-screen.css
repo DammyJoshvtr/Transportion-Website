@@ -3,56 +3,67 @@
 .first-screen-container {
   min-height: 75vh;
   background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-
-  padding-top: 3rem;
+  padding-bottom: 20px;
 }
 
 /* HEADER */
-.nav-bar {
+
+.nav-bar-container {
   display: flex;
-  justify-content: space-between; /* Space between navbar items */
-  align-items: center; /* Vertically aligns items */
+  justify-content: space-between;
+  align-items: center;
 
-  position: fixed;
-  top: 10px; /* Fixed navbar with slight offset */
-  left: 50%;
-  transform: translateX(-50%); /* Centers the navbar horizontally */
-  z-index: 10; /* Ensures it stays on top */
+  padding-right: 15px;
+  padding-left: 10px;
 
-  height: 55px;
-  width: 40rem; /* Navbar width */
   border-radius: 5px;
+  font-size: 13px;
 
-  background-color: rgb(22, 21, 21);
   color: white;
-  padding: 0 10px; /* Compact left-right padding */
-  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.9);
+  /* box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.9); */
   transition: opacity 0.5s ease;
   opacity: 1; /* Fully visible */
   cursor: pointer;
 }
 
-  .first-section:hover,
+.nav-bar-container .first-column {
+  width: 130rem
+}
+
+.nav-bar-container .image {
+  width: 54px;
+  margin-top: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between; /* Space between navbar items */
+  align-items: center; /* Vertically aligns items */
+
+  /* position: fixed;
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;  */
+
+  height: 55px;
+  width: 100%; /* Navbar width */
+  
+}
+
+  /* .first-section:hover,
   .second-section:hover,
 .third-section:hover,
 .fourth-section:hover {
   color: rgb(198, 66, 110);
-}
-
-/* When not on the home screen */
-.is-not-hovered {
-  opacity: 0.7; /* Transparent navbar */
-  box-shadow: none;
-}
+} */
 
 /* Restore visibility on hover */
-.nav-bar:hover {
-  opacity: 1; /* Fully visible when hovered */
+/* .nav-bar:hover {
+  opacity: 1; 
   box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.9);
 
-}
+} */
 
 
 .home-text-container {
