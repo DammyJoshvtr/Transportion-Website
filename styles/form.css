@@ -1,0 +1,81 @@
+body{
+  user-select: none;
+  font-family: inter, EuclidCircularB-Bold, sans-serif;
+}
+
+input {
+  width: 30rem;
+  height: 2rem;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  outline: none;
+}
+
+input:hover {
+  opacity: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  background: url('logo.jpg') no-repeat center center;
+  background-size: cover; /* Ensures full image coverage */
+}
+
+/* See-Through, Blurred Form Container */
+.form-container {
+  position: relative; /* Keeps it above the blurred background */
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(15px); /* Glassmorphism effect */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.selection-form {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.selection-text {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  height: 3rem;
+  width: 30rem;
+  margin: 0px 1px 0px 1px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+  color: white;
+}
+
+.select-div {
+  background-color: purple;
+  height: 5px;
+  width: 5rem;
+
+  border-radius: 5px;
+  margin: auto;
+}
