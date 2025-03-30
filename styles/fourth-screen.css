@@ -67,7 +67,3 @@
 .fourth-bottom-text p {
   cursor: pointer;
 }
-
-.fourth-bottom-text p:hover {
-  text-decoration: underline;
-}

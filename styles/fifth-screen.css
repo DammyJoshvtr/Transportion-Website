@@ -52,8 +52,10 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-left: 63px;
+  margin-left: 69px;
   margin-right: 63px;
+
+  width: 64rem;
 }
 
 .bottom-text-header {
@@ -69,14 +71,10 @@
   text-align: left;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
 
   cursor: pointer;
-}
-
-.fifth-text:hover {
-  text-decoration: underline;
 }
 
 .fifth-bottom-button-container {

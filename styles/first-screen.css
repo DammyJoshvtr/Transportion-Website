@@ -1,7 +1,7 @@
 /* FIRST SCREEN STYLES */
 
 .first-screen-container {
-  min-height: 85vh;
+  min-height: 75vh;
   background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -71,7 +71,7 @@
   top: 10rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .first-screen-paragraph {
@@ -80,12 +80,12 @@
   margin-left: 2rem;
   margin-top: 0px;
 
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .activity-box {
-  height: 7rem;
-  width: 18rem;
+  height: 5rem;
+  width: 15rem;
 
   display: flex;
   justify-content: space-between;
@@ -170,6 +170,7 @@
   align-items: center;
   text-align: center;
   color: white;
+  font-size: 9px;
 }
 
 

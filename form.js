@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <label for="hire-date">Departure Date</label>
       <input type="date" id="departure-date" required>
 
-      <button type="submit" class="submit">Proceed</button>
+      <button type="submit" class="submit js-po">Proceed</button>
     </form>
   `;
 
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   submitElement.addEventListener('click', (event) => {
     event.preventDefault();
 
-    // const isduplicate = true;
+    
 
     const booking = {
       departure: departElement.value,
