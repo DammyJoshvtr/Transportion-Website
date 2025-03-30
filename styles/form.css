@@ -1,3 +1,8 @@
+a{
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the text color from the parent */
+}
+
 body{
   user-select: none;
   font-family: inter, EuclidCircularB-Bold, sans-serif;
@@ -78,4 +83,28 @@ button {
 
   border-radius: 5px;
   margin: auto;
+}
+
+.home {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  margin: 15px 0px 15px 15px;
+  color: white;
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  padding: 10px 15px 7px 15px;
+  border-radius: 10px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.home:hover {
+  opacity: 1;
+}
+
+.image {
+  width: 25px;
 }
