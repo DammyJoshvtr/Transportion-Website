@@ -1,10 +1,10 @@
-
+console.log('i didnt disapear');
 
 document.addEventListener('DOMContentLoaded', () => {
   const formElement = document.querySelector('.js-container');
 
   // Book a Ride Form
-  const formHTML = `
+  const formHTML = `  
     <div class="selection-form">
       <div class="selection-text js-first-selection">Book a Ride</div>
       <div class="selection-text js-second-selection">Hire a Bus</div>
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <label for="departure-date">Departure Date</label>
       <input type="date" id="departure-date" required>
 
-      <button type="submit">Proceed</button>
+      <button type="submit" class="submit">Proceed</button>
     </form>
   `;
 
@@ -33,16 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     <form>
       <label for="hire-from">Hire From</label>
-      <input type="text" id="hire-from" required>
+      <input type="text" id="departure" required>
 
 
       <label for="hire-destination">Hire Destination</label>
-      <input type="text" id="hire-destination" required>
+      <input type="text" id="destination" required>
 
       <label for="hire-date">Departure Date</label>
-      <input type="date" id="hire-date" required>
+      <input type="date" id="departure-date" required>
 
-      <button type="submit">Proceed</button>
+      <button type="submit" class="submit">Proceed</button>
     </form>
   `;
 
@@ -59,4 +59,32 @@ document.addEventListener('DOMContentLoaded', () => {
       formElement.innerHTML = hireHTML;
     }
   });
+
+  const bookingsArr = []
+  
+  const submitElement = document.querySelector('.submit');
+  const departElement = document.getElementById('departure');
+  const destinationElement = document.getElementById('destination');
+  const dateElement = document.getElementById('desparture-date');
+
+  submitElement.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    // const isduplicate = true;
+
+    const booking = {
+      departure: departElement.value,
+      destination: destination.value,
+      date: destination.value
+    };
+
+    
+
+    bookingsArr.push(booking);
+    console.log(booking)
+  })
 });
+
+
+//when the button is clicked;
+//Take the values and add to booking html;
