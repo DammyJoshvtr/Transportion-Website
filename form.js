@@ -12,20 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     <form>
       <label for="departure">Departure</label>
-      <input type="text" id="departure" list="cities1">
-      <datalist id="cities1">
-        <option value="Lagos">
-        <option value="Abuja">
-        <option value="Port Harcourt">
-        <option value="Kano">
-        <option value="Ibadan">
-      </datalist>
+      <input type="text" id="departure" list="cities1" required>
 
       <label for="destination">Destination</label>
-      <input type="text" id="destination">
+      <input type="text" id="destination" required>
 
       <label for="departure-date">Departure Date</label>
-      <input type="date" id="departure-date">
+      <input type="date" id="departure-date" required>
 
       <button type="submit">Proceed</button>
     </form>
