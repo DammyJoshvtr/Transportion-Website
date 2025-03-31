@@ -11,8 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="selection-text js-third-selection">Booking Status</div>
     </div>
     <form>
+    
+      <label for="departure">Name</label>
+      <input type="text" id="name" required>
+
       <label for="departure">Departure</label>
-      <input type="text" id="departure" list="cities1" required>
+      <input type="text" id="departure" required>
 
       <label for="destination">Destination</label>
       <input type="text" id="destination" required>

@@ -65,5 +65,6 @@
 
 
 .fourth-bottom-text p {
-  cursor: pointer;
+  font-size: 12px;
+  font-weight: 300;
 }

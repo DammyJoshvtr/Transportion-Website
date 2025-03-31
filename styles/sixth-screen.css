@@ -11,7 +11,6 @@
   margin-left: 8rem;
   margin-right: 8rem;
   padding-top: 2rem;
-  font-weight: bold;
 }
 
 .sixth-header {
@@ -20,10 +19,13 @@
 
 ul {
   padding: 0px;
+  font-size: 11px;
 }
 
 .sixth-bottom-text-container {
   margin-left: 8rem;
   margin-right: 8rem;
   margin-top: 5rem;
+  font-weight: 200;
+  font-size: 12px;
 }

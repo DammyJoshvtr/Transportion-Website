@@ -10,10 +10,10 @@ body{
 
 input {
   width: 30rem;
-  height: 2rem;
+  height: 3rem;
   margin-bottom: 10px;
   background-color: rgb(255, 255, 255);
-  border-radius: 5px;
+  border-radius: 7px;
   opacity: 0.5;
   transition: opacity 0.5s;
   outline: none;
@@ -26,6 +26,7 @@ input:hover {
 label {
   display: block;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .container {
@@ -35,7 +36,7 @@ label {
   align-items: center;
 
 
-  background: url('logo/logo.jpg') no-repeat center center;
+  background: url('../resources/images/form-background.jpg') no-repeat center center;
   background-size: cover; /* Ensures full image coverage */
 }
 
@@ -46,8 +47,7 @@ label {
   padding: 20px;
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-  backdrop-filter: blur(15px); /* Glassmorphism effect */
+  background-color: rgb(255, 255, 255); /* Semi-transparent white */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
 
@@ -60,7 +60,8 @@ label {
 }
 
 .selection-text {
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 17px;
   cursor: pointer;
 }
 

@@ -4,6 +4,7 @@
   min-height: 75vh;
   background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
   padding-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 /* HEADER */
@@ -64,6 +65,17 @@
   box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.9);
 
 } */
+
+.fifth-section {
+  background-color: rgb(100, 43, 115);
+  padding: 10px 20px 10px 20px;
+  border-radius: 15px;
+  color: white;
+}
+.fifth-section:hover{
+  background-color: white;
+  color: black;
+}
 
 
 .home-text-container {
