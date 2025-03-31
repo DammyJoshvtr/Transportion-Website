@@ -1,8 +1,10 @@
 .third-screen {
   background-color: rgb(236, 230, 230);
-  min-height: 100vh;
+  background: url('../resources/images/inside-bus.jpg') no-repeat center center;
+  min-height: 70vh;
   color: white;
   padding-top: 1rem;
+  margin-bottom: 5rem;
 }
 
 .third-button-container {
@@ -17,7 +19,6 @@
   border-radius: 20px;
   border: none;
   background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
-  color: white;
   font-size: 20px;
   font-weight: bold;
   box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.3);
@@ -29,8 +30,9 @@
   grid-template-columns: 20rem 20rem;
   column-gap: 30rem;
 
-  margin-left: 3rem;
+  margin-left: 5rem;
   margin-right: 3rem;
+  margin-top: 0px;
 }
 
 .third-screen-header {
@@ -41,7 +43,6 @@
 }
 
 .third-screen-text {
-  color: black;
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 0px;
@@ -74,16 +75,24 @@
 .box-text-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 73rem;
+  height: 10rem;
+  color: black;
 
-  margin-left: 6rem;
-  margin-top: 2rem;
+  margin-right: 12px;
+  margin-left: 13px;
+  margin-top: 1rem;
+
+  border: rgba(255, 255, 255, 0.3); /* Subtle white border */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(15px); /* Glassmorphism effect */
 }
 
 .text-box {
   border-radius: 15px;
   height: 90px;
   width: 20rem;
-  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,9 +104,10 @@
 
 
 .box-header {
-  font-size: 20px;
+  font-size: 27px;
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-left: 20px;
   text-align: center;
 
 }
@@ -107,8 +117,4 @@
   margin-top: 3px;
   text-align: left;
   line-height: 13px;
-}
-
-.box-text:hover {
-  text-decoration: underline;
 }

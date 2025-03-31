@@ -1,9 +1,11 @@
 .second-screen {
-  background-color: rgb(2, 30, 41);
-  min-height: 70vh;
+  /* background-color: rgb(2, 30, 41); */
+  /* background: url('../resources/images/driver.jpg') no-repeat center center; */
+  min-height: 85vh;
   color: white;
-  padding-top: 1rem;
-  padding-right: 3rem;
+  padding-top: 10px;
+  color: black;
+  font-size: 12px;
 }
 
 .second-button-container {
@@ -11,14 +13,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-bottom: 10px;
 }
 
-p {
-  font-size: 13px;
+
+.second-screen-header {
+  font-size: 55px;
 }
+/* .second-screen {
+  font-size: 30px;
+} */
+
+/* .second-text-container {
+  width: 20rem;
+} */
 
 .second-second-text {
+  display: inline-block;
+}
+
+.second-screen-text{
   display: inline-block;
 }
 
@@ -36,14 +50,27 @@ p {
 
 .second-text-container {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
-.adjust-container {
+/* .adjust-container {
   position: relative;
   right: 90px; 
-}
+} */
 
 span {
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.span {
+  display: inline-block;
+}
+
+.driver-image {
+  width: 550px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 }
