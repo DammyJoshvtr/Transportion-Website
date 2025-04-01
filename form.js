@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     <form>
       <label for="departure">Name</label>
-      <input type="text" id="name" required>
+      <input placeholder="Last Name First..." type="text" id="name" required>
 
       <label for="departure">Departure</label>
       <input type="text" id="departure" required>
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     <form>
       <label for="departure">Name</label>
-      <input type="text" id="hire-name" required>
+      <input placeholder="Last Name First..." type="text" id="hire-name" required>
 
       <label for="hire-from">Hire From</label>
       <input type="text" id="hire-departure" required>
@@ -115,7 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
           <button>Back To Form</button>
         </a>`;
     } else {
-      bookingHTML += `<ul>`;
+      bookingHTML += `
+      <div class="booking-container">
+      <ul>`;
       storedBookings.forEach((booking, index) => {
         bookingHTML += `
           <li>
