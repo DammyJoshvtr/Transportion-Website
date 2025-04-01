@@ -2,6 +2,7 @@ console.log('i didnt disapear');
 
 document.addEventListener('DOMContentLoaded', () => {
   const formElement = document.querySelector('.js-container');
+  let bookingsArr = []; // Store all bookings
 
   // Book a Ride Form
   const formHTML = `  
@@ -11,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="selection-text js-third-selection">Booking Status</div>
     </div>
     <form>
-    
       <label for="departure">Name</label>
       <input type="text" id="name" required>
 
@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
       <label for="hire-from">Hire From</label>
       <input type="text" id="hire-departure" required>
 
-
       <label for="hire-destination">Hire Destination</label>
       <input type="text" id="hire-destination" required>
 
@@ -53,25 +52,23 @@ document.addEventListener('DOMContentLoaded', () => {
     </form>
   `;
 
-  const bookstatusHTML = `
-    <div>
-      ${name}
-    </div>  
-  `
-
   // Load the initial form (Book a Ride form by default)
   formElement.innerHTML = formHTML;
 
- // Event delegation: Listen for clicks on form switches
+  // Event delegation: Listen for clicks on form switches
   formElement.addEventListener('click', (event) => {
     if (event.target.classList.contains('js-first-selection')) {
       formElement.innerHTML = formHTML;
-      attachBookEvent(); // Reattach event listeners after updating DOM
+      attachBookEvent(); // Reattach event listeners
     }
 
     if (event.target.classList.contains('js-second-selection')) {
       formElement.innerHTML = hireHTML;
-      attachHireEvent(); // Reattach event listeners after updating DOM
+      attachHireEvent(); // Reattach event listeners
+    }
+
+    if (event.target.classList.contains('js-third-selection')) {  // ✅ Fixed typo here
+      attachBookingStatus(); // Load and display stored bookings
     }
   });
 
@@ -83,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateElement = document.getElementById('departure-date');
 
     submitElement.addEventListener('click', (event) => {
-      if (!departElement.value || !destinationElement.value) {
+      if (!departElement.value || !destinationElement.value || !dateElement.value) {
         alert('Please fill in the fields');
         event.preventDefault();
       } else {
@@ -92,11 +89,41 @@ document.addEventListener('DOMContentLoaded', () => {
           destination: destinationElement.value,
           date: dateElement.value
         };
-        bookingsArr.push(booking);
+        bookingsArr.push(booking);  // ✅ Store the booking
         console.log(bookingsArr);
       }
+      attachBookingStatus();
+
     });
-  }
+  };
+
+  // Function to display Booking Status
+  const attachBookingStatus = () => {
+    let bookingHTML = `
+      <h2>Booking Status</h2>
+    `;
+
+    if (bookingsArr.length === 0) {
+      bookingHTML += `<p>No bookings available.</p><br>
+      <a href="schedule-form.html">
+      <button>Back To Form</button></a>`;
+    } else {
+      bookingHTML += `<ul>`;
+      bookingsArr.forEach((booking, index) => {
+        bookingHTML += `
+          <li>
+            <strong>Booking ${index + 1}:</strong>
+            Departure: ${booking.departure}, Destination: ${booking.destination}, Date: ${booking.date}
+          </li>
+          <a href="schedule-form.html">
+      <button>Back To Form</button></a>
+        `;
+      });
+      bookingHTML += `</ul>`;
+    }
+
+    formElement.innerHTML = bookingHTML;
+  };
 
   // Function to attach event listeners for 'Hire a Bus'
   function attachHireEvent() {
@@ -105,10 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const hiredestinationElement = document.getElementById('hire-destination');
     const hiredateElement = document.getElementById('hire-departure-date');
 
-    console.log(hiresubmitElement, hiredepartElement, hiredestinationElement, hiredateElement); // Now this won't be null
-
     hiresubmitElement.addEventListener('click', (event) => {
-      if (!hiredepartElement.value || !hiredestinationElement.value) {
+      if (!hiredepartElement.value || !hiredestinationElement.value || !hiredateElement.value) {
         alert('Please fill in the fields');
         event.preventDefault();
       } else {
@@ -120,15 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
         bookingsArr.push(booking);
         console.log(bookingsArr);
       }
+      attachBookingStatus();
     });
   }
 
   // Load the initial form and attach event listeners
-  formElement.innerHTML = formHTML;
   attachBookEvent();
-
 });
-
-
-//when the button is clicked;
-//Take the values and add to booking html;
