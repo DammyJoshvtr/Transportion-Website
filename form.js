@@ -1,8 +1,12 @@
-console.log('i didnt disapear');
+
+
+console.log('i didnt disappear');
 
 document.addEventListener('DOMContentLoaded', () => {
   const formElement = document.querySelector('.js-container');
-  let bookingsArr = []; // Store all bookings
+
+  // Retrieve bookings from localStorage or initialize an empty array
+  let bookingsArr = JSON.parse(localStorage.getItem('bookingsArr')) || [];
 
   // Book a Ride Form
   const formHTML = `  
@@ -29,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   `;
 
   // Hire a Bus Form
-  const hireHTML = `
+  const hireHTML = `  
     <div class="selection-form">
       <div class="selection-text js-first-selection">Book a Ride</div>
       <div class="selection-text js-second-selection">Hire a Bus</div>
@@ -67,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
       attachHireEvent(); // Reattach event listeners
     }
 
-    if (event.target.classList.contains('js-third-selection')) {  // ✅ Fixed typo here
+    if (event.target.classList.contains('js-third-selection')) { 
       attachBookingStatus(); // Load and display stored bookings
     }
   });
@@ -89,37 +93,44 @@ document.addEventListener('DOMContentLoaded', () => {
           destination: destinationElement.value,
           date: dateElement.value
         };
-        bookingsArr.push(booking);  // ✅ Store the booking
-        console.log(bookingsArr);
-      }
-      attachBookingStatus();
 
+        // Store the booking in the array and update localStorage
+        bookingsArr.push(booking);
+        localStorage.setItem('bookingsArr', JSON.stringify(bookingsArr));
+
+        console.log(bookingsArr);
+        attachBookingStatus(); // Update booking status
+      }
     });
   };
 
   // Function to display Booking Status
   const attachBookingStatus = () => {
-    let bookingHTML = `
-      <h2>Booking Status</h2>
-    `;
+    // Retrieve updated bookings from localStorage
+    const storedBookings = JSON.parse(localStorage.getItem('bookingsArr')) || [];
 
-    if (bookingsArr.length === 0) {
+    let bookingHTML = `<h2>Booking Status</h2>`;
+
+    if (storedBookings.length === 0) {
       bookingHTML += `<p>No bookings available.</p><br>
-      <a href="schedule-form.html">
-      <button>Back To Form</button></a>`;
+        <a href="schedule-form.html">
+          <button>Back To Form</button>
+        </a>`;
     } else {
       bookingHTML += `<ul>`;
-      bookingsArr.forEach((booking, index) => {
+      storedBookings.forEach((booking, index) => {
         bookingHTML += `
           <li>
             <strong>Booking ${index + 1}:</strong>
-            Departure: ${booking.departure}, Destination: ${booking.destination}, Date: ${booking.date}
+            Departure: ${booking.departure}, Destination: ${booking.destination}, Date: ${booking.date}<br>
+            <button class="complete-button">Completed</button>
           </li>
-          <a href="schedule-form.html">
-      <button>Back To Form</button></a>
         `;
       });
-      bookingHTML += `</ul>`;
+      bookingHTML += `</ul><br>
+        <a href="schedule-form.html">
+          <button>Back To Form</button>
+        </a>`;
     }
 
     formElement.innerHTML = bookingHTML;
@@ -142,10 +153,14 @@ document.addEventListener('DOMContentLoaded', () => {
           destination: hiredestinationElement.value,
           date: hiredateElement.value
         };
+
+        // Store the booking in the array and update localStorage
         bookingsArr.push(booking);
+        localStorage.setItem('bookingsArr', JSON.stringify(bookingsArr));
+
         console.log(bookingsArr);
+        attachBookingStatus(); // Update booking status
       }
-      attachBookingStatus();
     });
   }
 
