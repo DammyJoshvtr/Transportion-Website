@@ -1,6 +1,6 @@
 .third-screen {
   background-color: rgb(236, 230, 230);
-  background: url('../resources/images/inside-bus.jpg') no-repeat center center;
+  /* background: url('../resources/images/inside-bus.jpg') no-repeat center center; */
   min-height: 70vh;
   color: white;
   padding-top: 1rem;

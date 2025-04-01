@@ -1,6 +1,7 @@
 .fourth-screen {
   min-height: 70vh;
   background-image: linear-gradient(to right, rgb(100, 43, 115), rgb(198, 66, 110));
+  margin-bottom: 3rem;
 }
 
 .fourth-button-container {

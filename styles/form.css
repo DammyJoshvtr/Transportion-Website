@@ -49,6 +49,10 @@ label {
   border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
   background-color: rgb(255, 255, 255); /* Semi-transparent white */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+
+  border: rgba(255, 255, 255, 0.3); /* Subtle white border */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(15px); /* Glassmorphism effect */
 }
 
 .selection-form {
