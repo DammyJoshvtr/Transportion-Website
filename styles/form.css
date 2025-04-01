@@ -118,3 +118,7 @@ button {
 li{
   font-size: 15px;
 }
+
+.complete-button {
+  background-color: green;
+}
