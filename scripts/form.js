@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (storedBookings.length === 0) {
       bookingHTML += `<p>No bookings available.</p><br>
-      <a href="schedule-form.html">
+      <a href="../html/schedule-form.html">
           <button>Back To Form</button>
         </a>`;
     } else {
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
       });
       bookingHTML += `</ul><br>
-        <a href="schedule-form.html">
+        <a href="../html/schedule-form.html">
           <button>Back To Form</button>
         </a>`;
     }
