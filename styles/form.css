@@ -32,11 +32,12 @@ label {
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  margin-top: 65px;
 
   background: url('../resources/images/form-background.jpg') no-repeat center center;
   background-size: cover; /* Ensures full image coverage */
@@ -101,7 +102,7 @@ button {
   margin: auto;
 }
 
-.home {
+/* .home {
   position: absolute;
   display: block;
   top: 0;
@@ -115,7 +116,7 @@ button {
   border-radius: 10px;
   opacity: 0.5;
   transition: opacity 0.3s;
-}
+} */
 
 .home:hover {
   opacity: 1;
