@@ -1,7 +1,7 @@
 .third-screen {
   background-color: rgb(236, 230, 230);
   /* background: url('../resources/images/inside-bus.jpg') no-repeat center center; */
-  min-height: 70vh;
+  min-height: 80vh;
   color: white;
   padding-top: 1rem;
   margin-bottom: 5rem ;
@@ -58,31 +58,32 @@
   margin-left: 10rem;
   margin-right: 10rem;
   margin-top: 1rem;
+
+  width: 50rem;
 }
 
-.box {
-  background-color: brown;
+.text-box img{
+  width: 390px;
   border-radius: 15px;
-  height: 165px;
-  width: 165px;
+  margin: auto;
+  object-fit: cover;
   box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.9);
-
   cursor: pointer;
-
 }
 
 
 .box-text-container {
+  background-color: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 73rem;
-  height: 10rem;
+  width: 50rem;
+  /* height: 10rem; */
   color: black;
 
-  margin-right: 12px;
-  margin-left: 13px;
-  margin-top: 1rem;
+  margin-left: 11rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
 
   border: rgba(255, 255, 255, 0.3); /* Subtle white border */
   background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
@@ -105,7 +106,7 @@
 
 .box-header {
   font-size: 27px;
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 20px;
   text-align: center;
