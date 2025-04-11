@@ -1,6 +1,5 @@
 .third-screen {
   background-color: rgb(236, 230, 230);
-  /* background: url('../resources/images/inside-bus.jpg') no-repeat center center; */
   min-height: 80vh;
   color: white;
   padding-top: 1rem;
@@ -49,7 +48,7 @@
   
 }
 
-/*  */
+
 .box-container {
   display: flex;
   justify-content: space-between;
@@ -78,7 +77,6 @@
   justify-content: space-between;
   align-items: center;
   width: 50rem;
-  /* height: 10rem; */
   color: black;
 
   margin-left: 11rem;

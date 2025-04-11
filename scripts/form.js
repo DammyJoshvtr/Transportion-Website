@@ -1,9 +1,7 @@
-console.log('i didnt disappear');
-
 document.addEventListener('DOMContentLoaded', () => {
   const formElement = document.querySelector('.js-container');
 
-  // Retrieve bookings from localStorage or initialize an empty array
+  // RetrieveS bookings from localStorage or initialize an empty array
   let bookingsArr = JSON.parse(localStorage.getItem('bookingsArr')) || [];
 
   // Book a Ride Form
@@ -66,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (event.target.classList.contains('js-second-selection')) {
       formElement.innerHTML = hireHTML;
-      attachHireEvent(); // Reattach event listeners
+      attachHireEvent(); // Reattaching event listeners
     }
 
     if (event.target.classList.contains('js-third-selection')) {
@@ -97,14 +95,14 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('bookingsArr', JSON.stringify(bookingsArr));
 
         console.log(bookingsArr);
-        attachBookingStatus(); // Update booking status
+        attachBookingStatus(); // Updating booking status
       }
     });
   };
 
   // Function to display Booking Status
   const attachBookingStatus = () => {
-    // Retrieve updated bookings from localStorage
+    // Retrieving updated bookings from localStorage
     const storedBookings = JSON.parse(localStorage.getItem('bookingsArr')) || [];
 
     let bookingHTML = `<h2>Booking Status</h2>`;
@@ -135,16 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
         </a>`;
     }
 
-    //  Update the UI with booking status
+    //  Updating the UI with booking status
     formElement.innerHTML = bookingHTML;
 
-    // Attach event listeners to delete buttons AFTER rendering HTML
+    // Attaching event listeners to delete buttons AFTER rendering HTML
     document.querySelectorAll('.complete-button').forEach((button) => {
       button.addEventListener('click', (event) => {
         const index = event.target.getAttribute('data-index'); // Get index from button
-        bookingsArr.splice(index, 1); //  Remove booking from array
-        localStorage.setItem('bookingsArr', JSON.stringify(bookingsArr)); // Update localStorage
-        attachBookingStatus(); // Re-render the booking status
+        bookingsArr.splice(index, 1); //  Removes booking from array
+        localStorage.setItem('bookingsArr', JSON.stringify(bookingsArr)); // UpdatES localStorage
+        attachBookingStatus(); // Re-rendering the booking status
       });
     });
   };

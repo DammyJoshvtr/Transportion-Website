@@ -1,6 +1,4 @@
 .second-screen {
-  /* background-color: rgb(2, 30, 41); */
-  /* background: url('../resources/images/driver.jpg') no-repeat center center; */
   min-height: 85vh;
   color: white;
   padding-top: 10px;
@@ -25,13 +23,6 @@
 .second-text {
   margin-left: 20px;
 }
-/* .second-screen {
-  font-size: 30px;
-} */
-
-/* .second-text-container {
-  width: 20rem;
-} */
 
 .second-second-text {
   display: inline-block;
@@ -59,11 +50,6 @@
   align-items: center;
   
 }
-
-/* .adjust-container {
-  position: relative;
-  right: 90px; 
-} */
 
 span {
   font-size: 60px;
